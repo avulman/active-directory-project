@@ -1,7 +1,9 @@
 # Active Directory Project
 [wip]
 ## Objective
-[wip]
+[wip] <br>
+![Active Directory Lab Diagram](ActiveDirectoryLab.jpg) <br>
+*Ref 1. Active Directory Lab Diagram*
 ## Skills Learned
 [wip]
 ## Tools Used
