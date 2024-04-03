@@ -93,3 +93,9 @@ Save this file as all file types in the local folder accessed previously as "inp
 ### *Summary*
 When viewing your Splunk server from either of your Windows machines, you should be able to see under "Selected fields" > "Host" two Values (your VMs) TARGET-PC and ADDC01.
 
+## Part 3
+### *1. Setup Active Directory Domain Services on the Windows Server*
+On your Windows server, open up Server Manager. Navigate to Manage > Add Roles and Features. Select Next > Next, and check Active Directory Domain Services > Add Features. Advance until you can select install. <br><br> Once you receive the message "Configuration required. Installation succeeded on ADDC01, you can advance to the next steps. Locate the flag icon at the top of the window, and select "Promote this server to a domain controller". Select "Add a new forest", because we are creating a brand new domain. We will name it demodomain.local. On the next page, leave all defaults and create a password. Advance until the Configuration Wizard validates prerequisites, and then install. This should trigger you to be signed out and have the server restart. <br><br> 
+When power back on, you should see DEMODOMAIN\Administrator as the user. In Server Manager, navigate to Tools > Active Directory Users and Computers<br><br> Right-click demodomain.local > New > Organizational Unit > Name: "IT". Right-click in the space of this new OU > New > User. First name: "Jenny", Last name: "Smith", Full name: "Jenny Smith", User logon name: "jsmith". Create a password, then finish. Create a new OU called "HR", and create another new different user. 
+### *2. Windows 10 Machine Joins New Domain*
+
