@@ -1,5 +1,5 @@
 # Active Directory Project
-### This project involves setting up a virtualized environment with Oracle VM VirtualBox, creating multiple virtual machines (VMs) including Windows 10, Kali Linux, Windows Server, and Ubuntu Server. Network configurations such as IP addresses and NAT Networks are established for communication between these VMs. Security measures are implemented by installing Splunk Server for log analysis and Universal Forwarder for data forwarding. Additionally, Sysmon is installed for endpoint monitoring. Practical security testing includes using Crowbar for brute force attacks and analyzing security logs in Splunk. Windows machines are joined to an Active Directory domain, and Remote Desktop is enabled. PowerShell scripting is utilized for automation tasks. This comprehensive setup allows for a hands-on exploration of various cybersecurity concepts and tools within a controlled environment. <br>
+### This project sets up a virtual environment using Oracle VM VirtualBox with Windows 10, Kali Linux, Windows Server, and Ubuntu Server VMs. Network configurations enable communication via IP addresses and NAT Networks. Security includes Splunk Server for log analysis, Universal Forwarder for data forwarding, and Sysmon for endpoint monitoring. Testing involves Crowbar for brute force attacks, Atomic Red Team (ART) for general tests, and Splunk log analysis. Windows machines join an Active Directory domain with Remote Desktop enabled. PowerShell scripting automates tasks for a hands-on exploration of cybersecurity concepts and tools in a controlled environment.<br>
 *Estimated completion time: 3-4 hours* <br><br>
 ![Active Directory Lab Diagram](ActiveDirectoryLab.jpg) <br>
 *Ref 1. Active Directory Lab Diagram*
@@ -13,6 +13,7 @@ The objective of the lab is to provide a hands-on learning experience in setting
 - Installing Splunk Server and Universal Forwarder.<br>
 - Installing Sysmon for endpoint monitoring.<br>
 - Using Crowbar for brute force attacks.<br>
+- Using Atomic Red Team (ART) to simulate tests. <br>
 - Analyzing security logs (event codes 4625, 4624) in Splunk.<br>
 - Joining Windows machines to a domain.<br>
 - Enabling Remote Desktop on Windows.<br>
@@ -20,21 +21,18 @@ The objective of the lab is to provide a hands-on learning experience in setting
 
 *These skills covered topics relating to Virtualization, Networking, Software Installation and Configuration, Security Tools and Practices, Operating System Configuration, Documentation and Reporting, Scripting and Automation, Troubleshooting, Active Directory Management, as well as Endpoint Monitoring and Defense.*<br>
 ## Tools Used
-1. Oracle VM VirtualBox Manager: For creating and managing virtual machines (VMs).<br>
-2. Splunk Server: For log analysis and monitoring.<br>
-3. Splunk Universal Forwarder: For data forwarding to Splunk.<br>
-4. Sysmon: A tool for endpoint monitoring on Windows machines.<br>
-5. Crowbar: Used for brute force attacks.<br>
-6. PowerShell: For scripting and automation tasks.<br>
-7. 7-zip: For extracting Kali Linux in the setup process.<br>
-8. Microsoft Windows Event Logs: Analyzed in Splunk for security monitoring.<br>
-9. Windows Server 2022: Operating system used for Active Directory Domain Services setup.<br>
-10. Ubuntu Server: Used as a Splunk server in the lab setup.<br>
-11. VirtualBox Guest Additions ISO: Installed on Ubuntu Server VM for enhanced features.<br>
-12. Atomic Red Team (ART): Used for security testing and validation.<br>
-13. Microsoft Sysinternals Sysmon: Configured for monitoring Windows event logs.<br>
-14. Microsoft Windows 10: Operating system for target machine in the lab.<br>
-15. Kali Linux: Used as an attacker machine in the lab setup.<br>
+- Oracle VM VirtualBox Manager: For creating and managing virtual machines (VMs).<br>
+- Splunk Server: For log analysis and monitoring.<br>
+- Splunk Universal Forwarder: For data forwarding to Splunk.<br>
+- Sysmon: Endpoint monitoring on Windows machines.<br>
+- Crowbar: Used to simulate brute force attacks.<br>
+- Atomic Red Team (ART): Used for security testing and validation.<br>
+- PowerShell: For scripting and automation tasks.<br>
+- Microsoft Windows Event Logs: Analyzed in Splunk for security monitoring.<br>
+- Windows Server 2022: Operating system used for Active Directory Domain Services setup.<br>
+- Ubuntu Server: Used as a Splunk server in the lab setup.<br>
+- Microsoft Windows 10: Operating system for target machine in the lab.<br>
+- Kali Linux: Used as an attacker machine in the lab setup.<br>
 
 # Steps
 ## Part 1 - VM Installation
