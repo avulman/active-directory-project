@@ -49,7 +49,7 @@ Navigate to https://ubuntu.com/server. In products, Ubuntu Server, download Ubun
 ### *Summary*
 You should now have Oracle VM VirtualBox Manager installed with four VMs running Windows 10, Kali Linux, Windows Server, and Splunk Server.
 
-## Part 2
+## Part 2 - Configure the Network
 ### *1. Setup Communications*
 Navigate to Tools > Network > NAT Networks > Create. Provide a name and IPv4 Prefix (in this lab, we will use 192.168.10.0/24), then apply. Navigate to each VM > Settings > Network, change "Attached to: *NAT Network*" and assign the name to the NAT Network you just created. Run the Splunk VM and type `sudo nano /etc/netplan/00-installer-config.yaml`. You should modify and save to look like this: <br>
 ````
